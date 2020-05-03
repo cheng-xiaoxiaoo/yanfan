@@ -212,6 +212,7 @@
 			var padding=0;
 			console.log(width);
 			console.log(height);
+			$("body").css("background-color","#d3c7f9");
 			if(height>width*rate){
 				for(var i =0;i<13;i++){
 					if(i>10){
@@ -282,6 +283,7 @@
 			$("#page-0").css("display","none");
 			$("#page-1").css("display","block");
 			n++;
+			$("body").css("background-color","white");
 		})
 		
 		$(".select-a").click(function(){
@@ -314,6 +316,9 @@
 				},500);
 				$("#page-"+n++).css("display","none");
 				$("#page-"+n).css("display","block");
+				if(n==9){
+					$("body").css("background-color","#d3c7f9");
+				}
 			}
 			else{
 				$("#page-10").css("display","block");
